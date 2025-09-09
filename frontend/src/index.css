@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #5f6FFF;
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+.text-primary {
+  color: var(--color-primary);
+}
+.active hr{
+  @apply block
+}
+.active li{
+  @apply text-black font-semibold
+}

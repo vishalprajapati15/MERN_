@@ -16,3 +16,12 @@
 .active li{
   @apply text-black font-semibold
 }
+
+::-webkit-scrollbar{
+  @apply  hidden
+}
+
+.my-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}

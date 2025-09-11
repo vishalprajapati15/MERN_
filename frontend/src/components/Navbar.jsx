@@ -11,22 +11,22 @@ const Navbar = () => {
 
   return (
     <div className='flex items-center justify-between text-sm py-4 mb-5 border-b border-b-gray-400 '>
-        <img className='w-44 cursor-pointer' src={assets.logo} alt="" />
-        <ul className='hidden md:flex items-start gap-5 font-medium'>
+        <img onClick={()=> navigate('/')} className='w-44 cursor-pointer' src={assets.logo} alt="" />
+        <ul className='hidden md:flex items-start gap-5 font-medium text-lg'>
             <NavLink to='/'>
-                <li className='py-1 text-gray-700 hover:text-black hover:font-semibold'>Home</li>
+                <li className='py-1 text-gray-700 hover:text-black hover:font-semibold transition-all duration-500'>Home</li>
                 <hr className='border-none outline-none h-0.5 bg-primary w-full m-auto hidden'/> 
             </NavLink>
             <NavLink to='/doctors'>
-                <li className='py-1 text-gray-700 hover:text-black hover:font-semibold'>All Doctors</li>
+                <li className='py-1 text-gray-700 hover:text-black hover:font-semibold transition-all duration-500'>All Doctors</li>
                 <hr className='border-none outline-none h-0.5 bg-primary w-full m-auto hidden'/> 
             </NavLink>
             <NavLink to='/about'>
-                <li className='py-1 text-gray-700 hover:text-black hover:font-semibold'>About</li>
+                <li className='py-1 text-gray-700 hover:text-black hover:font-semibold transition-all duration-500'>About</li>
                 <hr className='border-none outline-none h-0.5 bg-primary w-full m-auto hidden'/> 
             </NavLink>
             <NavLink to='/contact'>
-                <li className='py-1 text-gray-700 hover:text-black hover:font-semibold'>Contact</li>
+                <li className='py-1 text-gray-700 hover:text-black hover:font-semibold transition-all duration-500'>Contact</li>
                 <hr className='border-none outline-none h-0.5 bg-primary w-full m-auto hidden'/> 
             </NavLink>
         </ul>

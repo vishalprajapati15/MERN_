@@ -20,8 +20,8 @@ const Doctors = () => {
       setFilterDoc(doctors)
     }
   }
-  console.log("Doctors : ", doctors)
-  console.log("speciality : ", speciality)
+  // console.log("Doctors : ", doctors)
+  // console.log("speciality : ", speciality)
 
   useEffect(()=>{
      applyFilter()

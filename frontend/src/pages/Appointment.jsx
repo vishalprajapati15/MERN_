@@ -41,7 +41,7 @@ const Appointment = () => {
       //setting hours
       if (today.getDate() === currDate.getDate()) {
         currDate.setHours(currDate.getHours() > 10 ? currDate.getHours() + 1 : 10)
-        currDate.setMinutes(currDate.getMinutes > 30 ? 30 : 0)
+        currDate.setMinutes(currDate.getMinutes() > 30 ? 30 : 0)
       }
       else {
         currDate.setHours(10)

@@ -22,15 +22,15 @@ const About = () => {
       </div>
 
       <div className='flex flex-col md:flex-row mb-20 '>
-        <div className='border border-gray-300 px-10 md:px-16 py-8 sm:py-16 flex flex-col gap-5 text-[15px] hover:bg-[#5f6FFF] hover:text-white transition-all duration-300 text-gray-600 cursor-pointer'>
+        <div className='border border-gray-300 px-10 md:px-16 py-8 sm:py-16 flex flex-col gap-5 text-[15px] hover:bg-[#5f6FFF] hover:text-white transition-all duration-500 text-gray-600 cursor-pointer'>
           <b className='text-lg'>Efficiency:</b>
           <p>Streamlined appointment scheduling that fits into your busy lifestyle.</p>
         </div>
-        <div className='border border-gray-300 px-10 md:px-16 py-8 sm:py-16 flex flex-col gap-5 text-[15px] hover:bg-[#5f6FFF] hover:text-white transition-all duration-300 text-gray-600 cursor-pointer'>
+        <div className='border border-gray-300 px-10 md:px-16 py-8 sm:py-16 flex flex-col gap-5 text-[15px] hover:bg-[#5f6FFF] hover:text-white transition-all duration-500 text-gray-600 cursor-pointer'>
           <b className='text-lg'>Convenience:</b>
           <p>Streamlined appointment scheduling that fits into your busy lifestyle.</p>
         </div>
-        <div className='border border-gray-300 px-10 md:px-16 py-8 sm:py-16 flex flex-col gap-5 text-[15px] hover:bg-[#5f6FFF] hover:text-white transition-all duration-300 text-gray-600 cursor-pointer'>
+        <div className='border border-gray-300 px-10 md:px-16 py-8 sm:py-16 flex flex-col gap-5 text-[15px] hover:bg-[#5f6FFF] hover:text-white transition-all duration-500 text-gray-600 cursor-pointer'>
           <b className='text-lg'> Personlization:</b>
           <p>Streamlined appointment scheduling that fits into your busy lifestyle.</p>
         </div>

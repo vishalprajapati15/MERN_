@@ -46,7 +46,20 @@ const Navbar = () => {
                 </div> 
                 :<button onClick={()=> navigate('/login ')} className='bg-primary text-white px-8 py-3 rounded-full font-semibold hidden cursor-pointer md:block'>Create account</button>
             }
-            
+            <img onClick={()=>setShowMenu(true)} src={assets.menu_icon} alt=""  className='w-6 md:hidden cursor-pointer'/>
+            {/* --------------Mobile Menu--------------------- */}
+            <div className={`${showMenu ? 'fixed w-full': 'h-0 w-0'} md:hidden right-0 top-0 bottom-0 z-20 overflow-hidden bg-white transition-all duration-500`}>
+                 <div className='flex items-center justify-between px-5 py-6'>
+                    <img src={assets.logo} alt="" className='w-36 cursor-pointer'/>
+                    <img onClick={()=>setShowMenu(false)} src={assets.cross_icon} alt=""  className=' w-7 cursor-pointer'/>
+                 </div>
+                 <ul className='flex flex-col items-center gap-2 mt-5 px-5 text-xl font-semibold'>
+                    <NavLink className='px-4 py-2 rounded inline-block' onClick={()=>setShowMenu(false)} to='/'><p className='px-4 py-2 rounded inline-block'>Home</p></NavLink>
+                    <NavLink className='px-4 py-2 rounded inline-block' onClick={()=>setShowMenu(false)} to='/doctors'><p className='px-4 py-2 rounded inline-block'>All Doctors</p></NavLink>
+                    <NavLink className='px-4 py-2 rounded inline-block' onClick={()=>setShowMenu(false)} to='/about'><p className='px-4 py-2 rounded inline-block'>About</p></NavLink>
+                    <NavLink className='px-4 py-2 rounded inline-block' onClick={()=>setShowMenu(false)} to='/contact'><p className='px-4 py-2 rounded inline-block'>Contact</p></NavLink>
+                 </ul>
+            </div>
         </div>
     </div>
   )

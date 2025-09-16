@@ -52,7 +52,9 @@ const Appointment = () => {
         });
         currDate.setMinutes(currDate.getMinutes() + 30);
       }
-      setDocSlot((prev) => [...prev, timeSlots]);
+      if (timeSlots.length > 0) {
+        setDocSlot((prev) => [...prev, timeSlots]);
+      }
     }
   };
 

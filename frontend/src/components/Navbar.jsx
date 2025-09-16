@@ -48,7 +48,7 @@ const Navbar = () => {
             }
             <img onClick={()=>setShowMenu(true)} src={assets.menu_icon} alt=""  className='w-6 md:hidden cursor-pointer'/>
             {/* --------------Mobile Menu--------------------- */}
-            <div className={`${showMenu ? 'fixed w-full': 'h-0 w-0'} md:hidden right-0 top-0 bottom-0 z-20 overflow-hidden bg-white transition-all duration-500`}>
+            <div className={`fixed top-0 right-0 h-full w-full sm:w-full md:hidden z-20 bg-white/30 backdrop-blur-md shadow-lg transition-transform duration-300 ${showMenu ? 'translate-x-0' : 'translate-x-full'}`}>
                  <div className='flex items-center justify-between px-5 py-6'>
                     <img src={assets.logo} alt="" className='w-36 cursor-pointer'/>
                     <img onClick={()=>setShowMenu(false)} src={assets.cross_icon} alt=""  className=' w-7 cursor-pointer'/>
